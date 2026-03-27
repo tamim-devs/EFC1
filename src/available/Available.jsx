@@ -6,7 +6,7 @@ const Available = ({players,coin,setCoin,selectedPlayer,setSelectedPlayer}) => {
   
   return (
     <div>
-      <div className='grid grid-cols-4'>
+      <div className='grid grid-cols-1 md:grid-cols-4'>
         {players.map((player,index)=> {
           return <Card key={index} selectedPlayer={selectedPlayer} setSelectedPlayer={setSelectedPlayer} player={player} coin={coin} setCoin={setCoin}/>
         })}
